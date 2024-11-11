@@ -1,0 +1,122 @@
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container__imagem {
+    padding: 1em;
+  }
+  
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  }
+  
+  .container__botao:checked ~ .lista-menu {
+    display: block;
+  }
+  
+  .lista-menu__título {
+    color: var(--laranja);
+    font-weight: 700;
+  }
+  
+  .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+  }
+  
+  .lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+  }
+  
+  .container__botao {
+    display: none;
+  }
+  @media screen and (min-width: 1024px) {}
+  /*Código omitido */
+  
+  .lista-menu__item:hover:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+text-decoration: none;
+  
+    background: var(--azul-degrade);
+  }
+  .opções__item {
+    padding: 2em 1em;
+  }
+  .opções__botão:checked ~ .opções__rotulo > .opções__item {
+  background: var(--azul-degrade);
+  color: var(--branco);
+  }
+.container__titulo,
+.container__titulo--negrito {
+font-family: var(--fonte-secundario);
+font-size: 30px; 
+  }
+
+  .container__titulo {
+    display: none;
+    
+    font-weight: 400;
+    display: block;
+    }
+     .container__titulo--negrito {
+      font-weight: 700;
+     }
+     .opções {
+      display: none;
+     }
+    .opções_item {
+      padding: 0 1em;
+      text-transform: uppercase;
+    }
+    .opções__link {
+ text-decoration: none;
+color: var(--preto);
+    }
+    .container__imagem-transparente {
+      display: none;
+    }
+    .cabeçalho__menu-hamburguer {
+      display: none;
+    }
+  .opções_botão:checked ~ .lista-menu {
+    display: block;
+    width: auto;
+  }
+  .opções_botão {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1728px) {
+    .container__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--preto);
+    }
+  }
+  .opções {
+    margin-right: auto;
+  }
+  container__texto {
+    display: none;
+  }.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer {
+    background: var(--azul-degrade);
+    background-image: url("../img/MenuAberto.svg");
+  }
